@@ -9,11 +9,12 @@ class load_data_xml():
     
     def parse_data(self,root):
         for child in root:
-            print(child.tag)
+            print("Account Name:" + child.tag)
+            print("Account Attributes(if any):")
             print(child.attrib)
             self.parents.append(child.tag)
-            print(child[0].text)
-            print(child[1].text)
+            print("Paid Amount:"+child[0].text)
+            print("Due Amount:" +child[1].text)
             self.paidlist.append(child[0].text)
             self.duelist.append(child[1].text)
     
