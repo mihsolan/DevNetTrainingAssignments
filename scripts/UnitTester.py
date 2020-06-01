@@ -18,3 +18,9 @@ class test_data(unittest.TestCase):
         for data in duelist:
             self.assertEqual(float,type(float(data)))
     
+    def test_dnac_devices(self,devlist):
+        for dev in devlist:
+            self.assertEqual(5,len(devlist))
+            self.assertFalse(None,dev[0])
+            self.assertFalse(None,dev[0])
+
