@@ -24,3 +24,7 @@ class test_data(unittest.TestCase):
             self.assertFalse(None,dev[0])
             self.assertFalse(None,dev[0])
 
+    def test_sum_integers(self,result):
+        self.assertEqual(int,type(result[0]))
+        self.assertEqual(int,type(result[1]))
+
