@@ -20,7 +20,6 @@ class test_data(unittest.TestCase):
     
     def test_dnac_devices(self,devlist):
         for dev in devlist:
-            self.assertEqual(5,len(devlist))
             self.assertFalse(None,dev[0])
             self.assertFalse(None,dev[0])
 
